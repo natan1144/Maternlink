@@ -1,0 +1,238 @@
+/* ===== INTRODUÇÃO SERVIÇOS ===== */
+
+.services-intro {
+  max-width: 900px;
+  margin: 64.0px auto 32.0px;
+  text-align: center;
+  padding: 0 16.0px;
+  padding-top: 90px;
+}
+
+.services-intro h2 {
+  font-size: 35.2px;
+  color: #a64ca6;
+  font-weight: bold;
+  margin-bottom: 16.0px;
+}
+
+.services-intro p {
+  font-size: 18.4px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* ===== BENEFÍCIOS ===== */
+
+.servicos-beneficios {
+  margin: 90.0px auto;
+  display: flex;
+  max-width: 1100px;
+  flex-direction: column;
+  gap: 32.0px;
+}
+
+.servicos-beneficios .beneficio {
+  background: #fff7ff;
+  padding: 24.0px;
+  height: 110px;
+  border-radius: 14px;
+  border: 1px solid #f1d9f7;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.servicos-beneficios h3 {
+  color: #a64ca6;
+  font-size: 20.8px;
+  margin-bottom: 8.0px;
+}
+
+.servicos-beneficios p {
+  font-size: 16.0px;
+  color: #555;
+}
+
+/* ===== CTA FINAL ===== */
+
+.cta-services {
+  text-align: center;
+  padding: 64.0px 32.0px;
+  background: #fff1ff;
+  border-radius: 16px;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.cta-services h2 {
+  color: #a64ca6;
+  font-size: 32.0px;
+  margin-bottom: 16.0px;
+}
+
+.cta-services p {
+  font-size: 18.4px;
+  color: #444;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+/* ===== SEÇÃO DE SERVIÇOS ===== */
+
+.services {
+  padding: 90.0px 32.0px;
+  background: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services h3 {
+  margin-bottom: 40.0px;
+  color: #a64ca6;
+  font-size: 32.0px;
+  font-weight: bold;
+}
+
+/* Container dos cards */
+.cards {
+  width: 100%;
+  max-width: 1100px; 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32.0px;
+  justify-items: center;
+}
+
+/* Estilo dos cards */
+.card {
+  background: #fff;
+  padding: 32.0px 24.0px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 280px; 
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0d9f7;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  width: 70px;
+  margin-bottom: 16.0px;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.1));
+}
+
+.card h4 {
+  color: #a64ca6;
+  margin-bottom: 9.6px;
+  font-size: 20.0px;
+  font-weight: bold;
+}
+
+.card p {
+  color: #555;
+  font-size: 16.0px;
+  line-height: 1.4;
+}
+
+/* ===== ESPECIALIDADES ===== */
+.especialidades {
+  text-align: center;
+  padding: 90px 20px;
+  background: #fff;
+}
+
+.especialidades .badge {
+  display: inline-block;
+  background: #f3e8ff;
+  color: #9333ea;
+  font-size: 14.4px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.especialidades h2 {
+  font-size: 38.4px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #111;
+  line-height: 1.3;
+}
+
+.especialidades h2 span {
+  color: #c026d3;
+}
+
+.especialidades p {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 80px;
+  font-size: 16.0px;
+  font-weight: bolder;
+}
+
+.especialidades-grid {
+    max-width: 1100px;       
+    margin: 0 auto;         
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;  
+    gap: 24.0px;
+}
+
+/* ===== CARDS ===== */
+.especialidade-card {
+    width: 100%;
+    border-radius: 15px;
+    max-width: 220px;   
+    height: 150px; 
+    text-align: center;    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  
+}
+
+.especialidade-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.1);
+}
+
+.especialidade-card .icon-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  background: linear-gradient(135deg, #fbcfe8, #f9a8d4);
+}
+
+.especialidade-card i {
+  font-size: 28.8px;
+  color: #fff;
+}
+
+.especialidade-card p {
+  font-size: 15.2px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* ===== CORES ===== */
+.pink .icon-box { background: linear-gradient(135deg, #f9a8d4, #ec4899); }
+.blue .icon-box { background: linear-gradient(135deg, #93c5fd, #3b82f6); }
+.purple .icon-box { background: linear-gradient(135deg, #c4b5fd, #8b5cf6); }
+.purple-light .icon-box { background: linear-gradient(135deg, #d8b4fe, #a855f7); }
+.green .icon-box { background: linear-gradient(135deg, #86efac, #22c55e); }
+.orange .icon-box { background: linear-gradient(135deg, #fdba74, #f97316); }
+.cyan .icon-box { background: linear-gradient(135deg, #67e8f9, #06b6d4); }
+.gray .icon-box { background: linear-gradient(135deg, #d1d5db, #6b7280); }
+.lime .icon-box { background: linear-gradient(135deg, #bef264, #84cc16); }

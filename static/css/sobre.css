@@ -1,0 +1,104 @@
+/* ------ SOBRE ------ */
+
+.sobre-section {
+  padding: 90.0px 32.0px;
+  background: #fff;
+}
+
+.sobre-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.sobre-container {
+  max-width: 1100px;
+}
+
+/* Tag no topo */
+.sobre-texto .tag {
+  font-size: 17.6px;
+  font-weight: bold;
+  color: #a64ca6;
+  margin-bottom: 12.8px;
+}
+
+/* Título principal */
+.sobre-texto h1 {
+  font-size: 41.6px;
+  color: #a64ca6;
+  margin-bottom: 24.0px;
+  font-weight: 800;
+}
+
+/* Texto destaque */
+.sobre-texto .destaque {
+  background: #fff3f4;
+  padding: 20.8px;
+  border-radius: 14px;
+  font-size: 19.2px;
+  color: #a64ca6;
+  font-weight: 500;
+  margin-bottom: 32.0px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+/* Textos gerais */
+.sobre-texto p {
+  font-size: 18.4px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Subtítulos */
+.sobre-texto h2 {
+  font-size: 30.4px;
+  margin-top: 90.0px;
+  color: #a64ca6;
+  font-weight: 700;
+}
+
+/* ===== CARDS ===== */
+.cards-container {
+  margin-top: 32.0px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24.0px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff3f4;
+  border-radius: 14px;
+  padding: 25.0px;
+  width: 280px;
+  border: solid 1px #a64ca607;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  color: #a64ca6;
+  margin-bottom: 8.0px;
+  font-size: 20.0px;
+  text-align: left;
+}
+
+.card p {
+  font-size: 16.0px;
+  color: #555;
+  text-align: left;
+}
+
+/* ===== RESPONSIVO ===== */  
+@media (max-width: 768px) {
+  .sobre-texto h1 { font-size: 32.0px; }
+  .sobre-texto p { font-size: 16.8px; }
+  .sobre-texto .destaque { font-size: 17.6px; }
+  .card { width: 100%; }
+}
