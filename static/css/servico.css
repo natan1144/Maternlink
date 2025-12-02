@@ -15,6 +15,24 @@
   margin-bottom: 16.0px;
 }
 
+
+.servico-button {
+    display: inline-block;
+    background: #d63384;
+    padding: 14.4px 35.2px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 18.4px;
+    transition: transform .2s ease, background .2s ease;
+}
+
+.servico-button:hover {
+    background: #bc2b72;
+    transform: translateY(-2px);
+}
+
 .services-intro p {
   font-size: 18.4px;
   color: #555;
@@ -75,6 +93,7 @@
   max-width: 700px;
   margin: auto;
   line-height: 1.7;
+  margin-bottom: 16.0px;
 }
 
 /* ===== SEÇÃO DE SERVIÇOS ===== */

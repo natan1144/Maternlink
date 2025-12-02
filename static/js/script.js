@@ -117,4 +117,38 @@ document.addEventListener('DOMContentLoaded', function () {
         showQuote(0); 
     } 
 
-}); 
+    /* Botão "Voltar ao topo" — integrado ao script.js existente */
+    (function createBackToTop() {
+      if (document.getElementById('back-to-top')) return; // evita duplicata
+
+      const btn = document.createElement('button');
+      btn.id = 'back-to-top';
+      btn.setAttribute('aria-label', 'Voltar ao topo');
+      btn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l-8 8h5v8h6v-8h5z"/></svg><span class="back-text">Volte ao topo</span>';
+      document.body.appendChild(btn);
+
+      const THRESHOLD_PX = 24;
+      let visible = false;
+
+      function checkScroll() {
+        const scrolledToBottom = (window.innerHeight + window.pageYOffset) >= (document.documentElement.scrollHeight - THRESHOLD_PX);
+        if (scrolledToBottom && !visible) {
+          visible = true;
+          btn.classList.add('visible');
+        } else if (!scrolledToBottom && visible) {
+          visible = false;
+          btn.classList.remove('visible');
+        }
+      }
+
+      btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      window.addEventListener('scroll', checkScroll, { passive: true });
+      window.addEventListener('resize', checkScroll);
+      // checa agora (útil se já estiver no fim)
+      checkScroll();
+    })();
+
+});

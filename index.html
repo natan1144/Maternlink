@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MaternLink</title>
   <link rel="icon" href="static/img/MaternLink 94x96-logopng.png" type="image/png">
-  <link rel="stylesheet" href="static/css/styles.css">
+  <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 
 <body>
@@ -31,11 +31,21 @@
     <section class="carrossel">
       <div class="carousel-container">
         <div class="slide active">
-          <img src="static/img/BANNER1.jpg" alt="Imagem 1">
-        </div>
+          <picture>
+              <source 
+                  srcset="/static/img/Banner1Mobile.jpg" 
+                  media="(max-width: 480px)"
+              >
+              
+              <img 
+                  src="/static/img/BANNER1.webp" 
+                  alt="Imagem 1: Capa do carrossel principal"
+              >
+          </picture>
+      </div>
 
         <div class="slide">
-          <img src="static/img/BANNER2 (2).jpg" alt="Imagem 2">
+          <img src="static/img/Banner2.webp" alt="Imagem 2">
         </div>
 
         <!-- Botões -->
@@ -44,6 +54,12 @@
 
         <!-- Indicadores (bolinhas) -->
         <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="video">
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CSevrMIdMcg?si=IqWHzyKHnMLPMjkV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </section>
 
@@ -201,7 +217,6 @@
           <li><img src="https://img.icons8.com/color/24/phone.png" /> (61) 99665-2148</li>
           <li><img src="https://img.icons8.com/color/24/new-post.png" /> calderaro@viaconsultas.com.br</li>
           <li><img src="https://img.icons8.com/color/24/marker.png" /> Brasília, DF - Brasil</li>
-          <li><img src="https://img.icons8.com/color/24/clock.png" /> Atendimento 24/7</li>
         </ul>
       </div>
     </div>
@@ -212,7 +227,7 @@
   </footer>
 
 
-<script src="static/js/script.js"></script>
+<script src="/static/js/script.js"></script>
 </body>
 
 </html>
